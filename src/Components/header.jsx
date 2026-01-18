@@ -1,7 +1,7 @@
 export default function Header(){
     return(
-        <header>
-            <h1>Header </h1>
-        </header>
+       <div className="w-full h-25 bg-accent  ">
+            <img src="./logo.png" className="h-[100px] w-auto"/>
+       </div>
     )
 }
