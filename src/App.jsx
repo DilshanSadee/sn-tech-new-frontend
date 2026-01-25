@@ -2,19 +2,22 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./Components/header";
 import AdminPage from "./pages/adminPage";
+import HomePage from "./pages/homePage";
+import LoginPage from "./pages/loginPage";
 
 function App() {
   return (
     <BrowserRouter>
 
 
-    <div className="w-full h-screen bg-primary ">
-        <Header/>
+    <div className="w-full h-screen bg-primary "> 
       <Routes path="/">
-        <Route path="/" element={<h1>home page</h1>} />
-        <Route path="/login" element={<h1>login</h1>} />
+
+        <Route path="/*" element={<HomePage/>} />
+        <Route path="/login" element={<LoginPage/>} />
         <Route path="/register" element={<h1>register</h1>} />
-        <Route path="/admin" element={<AdminPage/>} />
+        <Route path="/admin/*" element={<AdminPage/>} />
+
       </Routes>
       </div>
     </BrowserRouter>

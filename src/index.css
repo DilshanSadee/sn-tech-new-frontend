@@ -1,1 +1,31 @@
+@import "tailwindcss";
+@theme{
+  --color-primary: #F6F8FC;
+  --color-secondary: #0E1325;
+  --color-accent: #698ca8;
 
+}
+/* Apply to the whole page (body) or a specific scrollable element (.scrollable-container) */
+
+/* The entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* width of the vertical scrollbar */
+  height: 12px; /* height of the horizontal scrollbar */
+}
+
+/* The track (background) */
+::-webkit-scrollbar-track {
+  background: rgb(148, 140, 140);
+  border-radius: 10px;
+}
+
+/* The thumb (draggable handle) */
+::-webkit-scrollbar-thumb {
+  background: white;
+  border-radius: 10px; /* roundness of the scroll thumb */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
